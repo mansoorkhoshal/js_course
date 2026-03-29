@@ -1,2 +1,2 @@
 # js_course
-Js Course Revision with Hiethish sir
+Js Course Revision with Hethish sir
