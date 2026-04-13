@@ -40,7 +40,39 @@ const myFunction = function () {
 
 // If you want to check the data type of anything you simple put in the typeof method. Like:
 
-console.log(typeof myFunction);
+// console.log(typeof myFunction);
 
 // if you want to read the official doucomnetation. Link below
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// today we are talking about the memory
+
+// its two type
+// 1. Stack (Primitive Data Type)-- actually its only creating the copy of original value. 1.1 e.g
+// 2. Heap (Non-Primitive Data Type)
+
+// 1.1
+
+let myHobby = "Coding";
+let myAnotherHobby = myHobby;
+
+myAnotherHobby = "Reading a book";
+
+console.log(myHobby);
+console.log(myAnotherHobby);
+
+let userOne = {
+  email: "mansoor@gmail.com",
+  userId: "mansoor@id",
+};
+
+let userTwo = userOne;
+
+userTwo.email = "khoshal@gmail.com";
+
+console.log(userOne); // khoshal@gmail.com
+console.log(userTwo); // khoshal@gmail.com
+
+// if you see the output then you should be noted that the email is changed in both userOne and userTwo.
